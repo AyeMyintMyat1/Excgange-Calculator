@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange calcutator</title>
+  <!-- Primary Meta Tags -->
+  <title>MMS Exchange Calculator</title>
+  <meta name="title" content="MMS Exchange Calculator">
+  <meta name="description" content="SWD Testing good job.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="MMS Exchange Calculator">
+  <meta property="og:description" content="SWD Testing good job.">
+  <meta property="og:image" content="image/Artboard 1.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="MMS Exchange Calculator">
+  <meta property="twitter:description" content="SWD Testing good job.">
+  <meta property="twitter:image" content="image/Artboard 1.png">
+
+  <link rel="shortcut icon" href="image/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modechange.css">
+  <link rel="stylesheet" href="Vendor/animate.css/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body id="body">
+  <p class="p" id="p"> <i>D</i>ark <i>M</i>ode</p>
+  <section class="app">
+    <div class="output">
+      <div class="brand-container">
+        <img src="image/logo.svg" alt="" class="logo">
+        <p class="brand">MMEx</p>
+      </div>
+      <div class="result-container">
+        <div class="result" id="result">0.00</div>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <form action="" class="calc" id="calc">
+      <div class="input-container container">
+        <label for="input">Input</label>
+        <input type="number" id="input" class="input" autofocus min="3" placeholder="0.00">
+      </div>
+      <div class="from-container container">
+        <label for="from">From</label>
+        <select id="from" class="from">
+          <option value="">Select Currency here!</option>
+        </select>
+      </div>
+      <div class="to-container container">
+        <label for="to">To</label>
+        <select id="to" class="to">
+
+        </select>
+      </div>
+      <div class="calculate-container container">
+        <input type="submit" value="Calculate" id="calc-btn" class="calc-btn" data-counter>
+        <!-- <button id="calc-btn" class="calc-btn" data-counter>Calcutate</button> -->
+      </div>
+    </form>
+    <div class="history-container" id="history-container">
+      <table id="history" class="history">
+        <thead>
+          <tr>
+            <th class="frist">NO</th>
+            <th>Date</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Result</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="historylist">
+
+        </tbody>
+
+      </table>
+    </div>
+    <!-- <div class="modecircle animate__animated animate__slideInUp"onclick="darkMode()" >
+<i class="fas fa-moon fst" id="day"></i>
+  </div> -->
+    <div class="mode">
+      <i class="circle" onclick="move()" id="circle"> </i>
+      <i class="fas fa-sun sec"></i>
+      <i class="fas fa-moon sec"></i>
+    </div>
+  </section>
+  <script src="js/data.js"></script>
+  <script src="js/test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+:root{
+ --night-secondary:#181818;
+ --night-secondary-soft:#3a3b3c;
+--wh:#ddd;
+}
+.darkmode{
+background-color: var(--night-secondary);
+transition: 0.5s;
+}
+.darkmode .input{
+ background-color:var(--night-secondary-soft);
+ color:var(--wh);
+}
+.darkmode .from{
+ background-color:var(--night-secondary-soft);
+ color:var(--wh);
+}
+.darkmode .to{
+ background-color:var(--night-secondary-soft);
+ color:var(--wh);
+}
+.darkmode #historylist tr{
+ background-color: var(--night-secondary-soft);
+}
+.darkmode #historylist tr:hover{
+ background-color: var(--night-secondary);
+}
+.darkmode td{
+color:var(--wh);
+}
+.darkmode .divider{
+ background-color:var(--wh);
+ }
+ .darkmode .result{
+  color:var(--wh);
+  }
+.darkmode .modecircle{
+ background-color: var(--wh);
+}
+.darkmode #day{
+ color:var(--night-secondary)
+}
+.darkmode .mode{
+ background-color: #ddd;
+}
+.darkmode .sec{
+ color: var(--night-secondary-soft);
+}
